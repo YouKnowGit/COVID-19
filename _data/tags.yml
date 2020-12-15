@@ -1,0 +1,12 @@
+newConfirmed :
+  name: newConfirmed
+  description: False
+  cover: assets/built/images/blog-cover.jpg
+governmentPolicy :
+  name: governmentPolicy
+  description: False
+  cover: assets/built/images/blog-cover.jpg
+quarantineStatus :
+  name: quarantineStatus
+  description: False
+  cover: assets/built/images/blog-cover.jpg
