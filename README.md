@@ -1,7 +1,6 @@
 # covid-19
 ---------
-![home page](https://github.com/YouKnowGit/covid-19/assets/screenshot-desktop.jpg)
-[home page](https://covid19blog.github.io)
+![screenshot-desktop](https://user-images.githubusercontent.com/62130211/102218377-33c5be00-3f21-11eb-9335-55e3396a2e89.jpg)
 
 ### 프로젝트 설명
 > jekyll을 이용하여 covid-19 에 대한 최신 정보를 제공하고 github와 100% 호환되는 블로그 제작 프로젝트
