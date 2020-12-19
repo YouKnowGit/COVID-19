@@ -10,16 +10,14 @@ require 'date'
 require 'yaml'
 
 CONFIG = YAML.load(File.read('_config.yml'))
-PRODUCTION = CONFIG["production"]
-PREPO = CONFIG["prepo"]
 USERNAME = CONFIG["username"]
-SREPO = CONFIG["srepo"]
+REPO = CONFIG["repo"]
 SOURCE_BRANCH = CONFIG["branch"]
 DESTINATION_BRANCH = "master"
 
 def check_destination
   unless Dir.exist? CONFIG["destination"]
-    sh "https://github.com/covid19blog/covid19blog.github.io/tree/02be21e3fbf880327bc39bc27ce4c40f12198e51"
+    sh "git clone https://$GIT_NAME:$GITHUB_TOKEN@github.com/#{USERNAME}/#{REPO}.git #{CONFIG["destination"]}"
   end
 end
 
@@ -71,8 +69,8 @@ namespace :site do
       # check if there is anything to add and commit, and pushes it
       sh "if [ -n '$(git status)' ]; then
             git add --all .;
-            git commit -m 'Updating to #{PRODUCTION}/#{PREPO}@#{sha}.';
-            git push https://$GITHUB_TOKEN@github.com/#{PRODUCTION}/#{PRODUCTION}.github.io.git #{DESTINATION_BRANCH} --quiet ;
+            git commit -m 'Updating to #{USERNAME}/#{REPO}@#{sha}.';
+            git push https://$GITHUB_TOKEN@github.com/covid19blog}/covid19blog.github.io.git #{DESTINATION_BRANCH} --quiet ;
          fi"
       puts "Pushed updated branch #{DESTINATION_BRANCH} to GitHub Pages"
     end

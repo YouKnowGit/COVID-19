@@ -9,7 +9,7 @@ install:
   - bundle install
 
 before_script:
-  - git config --global user.email "choi15ho@gmail.com"
+  - git config --global user.email "ch1423ho@naver.com"
   - git config --global user.name "YouKnow"
 
 script: bundle exec rake site:deploy --quiet #--trace
