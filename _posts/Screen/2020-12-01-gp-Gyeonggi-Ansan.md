@@ -5,7 +5,7 @@ cover:  assets/built/images/sc-cover.jpg
 navigation: True
 title: 안산시, 안산시의사회와 함께 주말 코로나19 선별진료소 운영
 date: 2020-03-06 00:00:00
-tags: [screeningClinic]
+tags: [Screen]
 class: post-template
 subclass: 'post tag-regionalStatus'
 author: COVID-19
