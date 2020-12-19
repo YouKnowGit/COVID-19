@@ -11,7 +11,7 @@ subclass: 'post tag-governmentPolicy'
 author: COVID-19
 ---
 
-{% include gp-distancing-table-of-contents.html %}
+{% include gp-table-of-contents.html %}
 
 오늘(12.14)부터 코로나19
 감염 위험이 집중된 수도권을 중심으로

@@ -11,7 +11,7 @@ subclass: 'post tag-governmentPolicy'
 author: COVID-19
 ---
 
-{% include gp-distancing-table-of-contents.html %}
+{% include gp-table-of-contents.html %}
 
 12월 8일 0시  
 
