@@ -10,14 +10,16 @@ require 'date'
 require 'yaml'
 
 CONFIG = YAML.load(File.read('_config.yml'))
+PRODUCTION = CONFIG["production"]
+PREPO = CONFIG["prepo"]
 USERNAME = CONFIG["username"]
-REPO = CONFIG["repo"]
+SREPO = CONFIG["srepo"]
 SOURCE_BRANCH = CONFIG["branch"]
 DESTINATION_BRANCH = "master"
 
 def check_destination
   unless Dir.exist? CONFIG["destination"]
-    sh "git clone https://$GIT_NAME:$GITHUB_TOKEN@github.com/#{USERNAME}/#{REPO}.git #{CONFIG["destination"]}"
+    sh "git clone https://github.com/YouKnowGit/covid-19.git #{CONFIG["destination"]}"
   end
 end
 
@@ -48,7 +50,7 @@ namespace :site do
     end
 
     # Configure git if this is run in Travis CI
-    if ENV["TRAVIS"]travis encrypt GITHUB_TOKEN=2b82cbfc12043d8211db3b62cda23a517e1c086e -r covid19blog/covid19blog.github.io
+    if ENV["TRAVIS"]
       sh "git config --global user.name $GIT_NAME"
       sh "git config --global user.email $GIT_EMAIL"
       sh "git config --global push.default simple"
@@ -69,8 +71,8 @@ namespace :site do
       # check if there is anything to add and commit, and pushes it
       sh "if [ -n '$(git status)' ]; then
             git add --all .;
-            git commit -m 'Updating to #{USERNAME}/#{REPO}@#{sha}.';
-            git push https://$GITHUB_TOKEN@github.com/#{USERNAME}/#{USERNAME}.github.io.git #{DESTINATION_BRANCH} --quiet ;
+            git commit -m 'Updating to #{PRODUCTION}/#{PREPO}@#{sha}.';
+            git push https://$GITHUB_TOKEN@github.com/#{PRODUCTION}/#{PRODUCTION}.github.io.git #{DESTINATION_BRANCH} --quiet ;
          fi"
       puts "Pushed updated branch #{DESTINATION_BRANCH} to GitHub Pages"
     end
