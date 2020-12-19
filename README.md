@@ -15,7 +15,7 @@
 ### 프로젝트 구성원 및 기여도
 * 소프트웨어학부 2018045178 최윤호
 * 소프트웨어학부 2020054084 조 은
-[기여도](https://github.com/YouKnowGit/covid-19/graphs/contributors)
+> [기여도](https://github.com/YouKnowGit/covid-19/graphs/contributors)
 
 ---------
 ### 프로젝트 진행
@@ -26,7 +26,7 @@
 
 ---------
 ### 블로그 구성
-```jektll thee```는 [jasper2](https://github.com/jekyller/jasper2)로 결정.
+```jektll theme```는 [jasper2](https://github.com/jekyller/jasper2)로 결정.
 ![blog-table-view](https://user-images.githubusercontent.com/62130211/102689740-c1681d00-4243-11eb-9a0f-52f6ff608625.jpg)
 
 ---------
