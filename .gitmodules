@@ -1,0 +1,6 @@
+[submodule "covid19blog.github.io"]
+	path = covid19blog.github.io
+	url = https://github.com/covid19blog/covid19blog.github.io
+[submodule "output"]
+	path = output
+	url = https://github.com/covid19blog/covid19blog.github.io.git
