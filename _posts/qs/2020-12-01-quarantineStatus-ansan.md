@@ -7,7 +7,7 @@ title: 안산시 방역일일보고(2020. 10. 14.)
 date: 2020-10-14 00:00:00
 tags: [quarantineStatus]
 class: post-template
-subclass: 'post tag-quarantineStatus'
+subclass: 'post tag-regionalStatus'
 author: COVID-19
 ---
 
