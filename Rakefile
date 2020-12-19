@@ -48,7 +48,7 @@ namespace :site do
     end
 
     # Configure git if this is run in Travis CI
-    if ENV["TRAVIS"]
+    if ENV["TRAVIS"]travis encrypt GITHUB_TOKEN=2b82cbfc12043d8211db3b62cda23a517e1c086e -r covid19blog/covid19blog.github.io
       sh "git config --global user.name $GIT_NAME"
       sh "git config --global user.email $GIT_EMAIL"
       sh "git config --global push.default simple"
