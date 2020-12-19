@@ -3,7 +3,7 @@ layout: post
 current: post
 cover:  assets/built/images/gp-logo.png
 navigation: True
-title: 2020년 12월 08 - 정부 방침
+title: 2020년 12월 08일 - 정부 방침
 date: 2020-12-08 00:00:00
 tags: [governmentPolicy]
 class: post-template

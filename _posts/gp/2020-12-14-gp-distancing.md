@@ -3,7 +3,7 @@ layout: post
 current: post
 cover:  assets/built/images/gp-logo.png
 navigation: True
-title: "증상 없어도 의심 된다면 코로나19 검사 받아주세요" <수도권 임시선별검사소>
+title: 2020년 12월 08일 - "증상 없어도 의심 된다면 코로나19 검사 받아주세요" <수도권 임시선별검사소>
 date: 2020-12-14 00:00:00
 tags: [governmentPolicy]
 class: post-template
