@@ -143,9 +143,3 @@ exclude:
   - node_modules
   - assets/css
   - assets/images
-  - _posts/angular
-  - _posts/et-cetera
-  - _posts/typescript
-  - _posts/iot
-  - _posts/r
-  - _posts/economy
