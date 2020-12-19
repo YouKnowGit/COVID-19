@@ -15,3 +15,9 @@
 2. 메뉴 구성 (신규 확진자 수, 증감 비교, 최근 정부 방침, 검사자 수 믹 확진률 입원환자 수, 중환자 수, 사망자 수 등)
 3. 메뉴에 맞는 블로그 디자인
 4. 웹 크롤링 등을 이용한 자료 수집 및 구성
+
+
+## Issues and Contributing
+
+이 프로젝트에 기여를 하고싶으시다면 [여기](https://github.com/YouKnowGit/covid-19/issues)에서 New Issue 를 클릭하시고 양식에 맞춰 작성해주세요.
+패치 및 수정 사항을 자유롭게 Pull Request 해주세요.
