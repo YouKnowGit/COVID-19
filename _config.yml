@@ -110,8 +110,8 @@ feed:
 safe: False
 lsi: False
 
-username: YouKnowGit
-repo: covid-19
+username: covid19blog
+repo: covid19blog.github.io
 # username : travis-ci와 연동하는 github의 username
 # repo: travis-ci와 연동하는 github의 repository이름
 # https://github.com/<username>/<repository>
