@@ -2,7 +2,7 @@ sudo: false
 language: ruby
 cache: bundler
 rvm:
-  - 2.7.2
+  - 2.7.0
 
 install:
   # Install Jekyll and dependencies
@@ -21,10 +21,10 @@ script: bundle exec rake site:deploy --quiet #--trace
 # travis encrypt 'GIT_NAME="YOUR_USERNAME" GIT_EMAIL="YOUR_EMAIL" GH_TOKEN=YOUR_TOKEN'
 env:
   global:
-    secure: "VfrFZoxOkEj5QIZWX/rXtF2a0Yf/GA1PUPV0HPIIHNhr5wGIPLeR2lh3kHObrn5nrv8GyIItPJ9jUZx1scpT5zdLejyprbngW1vclKgBIq0Lo0cUkgm9BFg9U0UnAK38olg8b8KWkRg1qDnxh+0+2BZWxODYxpRkOfyynt1b8zFNSh
-             P4V7RvaAKGbnSlFLcs2qP1ZSd/zY+AyhRfNmpDj0zBVBYQNqspURNgKAuDKvvw2s0D4Hf4fbnZSh4M0H2+lonvaGeLWLN9JLSea3f702GdiVlaRudl2Hx8IbMPRIZpVro48L05k1h2yBM+L+ewp1K6ElSy2fGP65G0nr3RUYvmjisCc2HqdM59szt
-             WtuAZbEl71VnUFPk3yJnsoqm/x2tlMZMZdZp6opZOJd0C2io0HaTsyQgcOfTRoKJVn/mPNHvUxYD1DR4uGEovCfaGtp1jYsw8shzEsPkcVsdl6D0ZUiBaIhE9SAlvuDlY8O1Zqmr8ostEUN/802EkPSJhaX1XXC7PXHwPLbYtbjBIURXsx10BFc7U
-             gMTkmNWF2lJmNg4dow//rnlAZosXw7/RaxamjaKQD2x8WMeeSjmwHcFscSpOyKWXnC28G9Unqezb6XoNA3wWeBUlLgkatju3RURv/aIH15yoOerx4kchJZCC5a8sP4jYJJJ3Wk8kd8E="
+    secure: "kxTOfet3NrET+pZqwsObO/ybvU49uQf8riELvAn7TPG8KwbOZw9QrrTrocmfpIHZl3fJtLPWjH2bc08KDBJvg03jUFKGvcjS+SvOL9E1XALS6XObmpwe7nFpYqlgnES+l5wQZDJqXFr1CSTYJGoOQdKTwAGEhF/vphWZ8ui9KmG8hr
+             e1Rm8uMM0IOiE/X86cGO7T7KwiZVvbz11p2VegzYpQlvZJ/tx55y6qMF9ZmuXojTGhq8U29tIZfxEVwa7vjeqGIY/T/CngmUa2hwB1u5jI4RhYPZZxVD/9jXG0JB7hU+h4E9JqMuIGLr8VF9/6eCVuzf6RlJslzi7c224MpGDVgdkR0bH1xtC+XrX
+             xBJzP0yM/6LQqYdlLn2vmpuq9+Pn7TPcGkNAeR7l14PYQKFTSEB9uUM/HnEyWilugQ9XNNI7PnBaWZ7EOYHj6bbISW73z3SQMNWGu8PxMjx5Ydb2L5xHiLe44C8FgNjg4cbYWreg9UYaUaokq/N4wdnIr7h/3pkekVE5AL4q3ReYQnQfI4uyXfTKS
+             vfziv25QdGD+zUoeKGBOJBpP2GgOda11JN9b9kXSzOfCL7aBZq/v0Z9HjZ7yrX7GJQg0NnVs7+JH0fFZSSVU3Pdnn56gMZg1yDg9BJqKAdfKSHn47I8PPFhAH8XFgjHcdreAg+Jhf34="
 branches:
   only:
     - master
