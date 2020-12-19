@@ -19,7 +19,7 @@ DESTINATION_BRANCH = "master"
 
 def check_destination
   unless Dir.exist? CONFIG["destination"]
-    sh "git clone https://github.com/YouKnowGit/covid-19.git #{CONFIG["destination"]}"
+    sh "https://github.com/covid19blog/covid19blog.github.io/tree/02be21e3fbf880327bc39bc27ce4c40f12198e51"
   end
 end
 
